@@ -31,6 +31,7 @@ public class StackerClass<T> {
     
     public T pop()
     {
-        return items.get(--top);
+        T tip = items.remove(--top);
+        return tip;
     }
 }
